@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scanner", "Scanner\Scanner.csproj", "{FF2A5E74-CA78-4353-AC5A-7FBC8653FB51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cartwheel.Scanner", "Cartwheel.Scanner", "{EF495A69-4812-4480-B0E5-5724C6E33664}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Scanner", "Test.Scanner\Test.Scanner.csproj", "{4965FD0A-008C-4FA2-A7AC-5CD3C7614EF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF2A5E74-CA78-4353-AC5A-7FBC8653FB51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF2A5E74-CA78-4353-AC5A-7FBC8653FB51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF2A5E74-CA78-4353-AC5A-7FBC8653FB51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF2A5E74-CA78-4353-AC5A-7FBC8653FB51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4965FD0A-008C-4FA2-A7AC-5CD3C7614EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4965FD0A-008C-4FA2-A7AC-5CD3C7614EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4965FD0A-008C-4FA2-A7AC-5CD3C7614EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4965FD0A-008C-4FA2-A7AC-5CD3C7614EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF2A5E74-CA78-4353-AC5A-7FBC8653FB51} = {EF495A69-4812-4480-B0E5-5724C6E33664}
+		{4965FD0A-008C-4FA2-A7AC-5CD3C7614EF7} = {EF495A69-4812-4480-B0E5-5724C6E33664}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6EA4FD4-3158-4DFD-850B-F13C85B75844}
+	EndGlobalSection
+EndGlobal
