@@ -23,6 +23,10 @@ namespace Cartwheel.Language.Test
 
 
 
+
+        #region Scaffolding
+
+
         internal void TestSuccess(string expression, char[] AllowedChars)
         {
             var testResult = Eval(expression, AllowedChars);
@@ -35,6 +39,7 @@ namespace Cartwheel.Language.Test
             var testResult = Eval(expression, AllowedChars);
             Assert.AreEqual(true, testResult.ScanError.HasScanError);
         }
+
 
 
 
@@ -69,5 +74,10 @@ namespace Cartwheel.Language.Test
             }
             return _result;
         }
+
+        #endregion
+
+
+
     }
 }

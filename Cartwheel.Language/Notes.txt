@@ -1,0 +1,4 @@
+***************** TO BE REMOVED ONCE MD IS UPDATED *****************
+
+Not sure if I need a Syntax Result yet or not.
+Could return the data asociated with the IL or even cache
