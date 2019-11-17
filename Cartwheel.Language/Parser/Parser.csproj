@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>Cartwheel.Language.Parser</AssemblyName>
+    <RootNamespace>Cartwheel.Language</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scanner\Scanner.csproj" />
+    <ProjectReference Include="..\Syntax\Syntax.csproj" />
+  </ItemGroup>
+
+</Project>

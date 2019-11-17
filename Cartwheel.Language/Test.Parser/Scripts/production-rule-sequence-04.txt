@@ -1,0 +1,61 @@
+﻿production-rule-sequence:
+	production-rule-sequence? whitespace-sequence? production-rule;
+
+production-rule:
+	production-name whitespace-sequence? rule-name-sequence whitespace-sequence? semi-colon  whitespace-sequence?;
+
+rule-name-sequence:
+	rule-name-sequence? rule-name whitespace-sequence? pipe whitespace-sequence? rule-name
+	| rule-name-sequence? whitespace-sequence? rule-name 
+	| rule-name-sequence whitespace-sequence? pipe whitespace-sequence? rule-name ;
+
+production-name:
+	valid-letter-sequence colon;
+
+rule-name:
+	valid-letter-sequence optional?
+	| char-litteral;
+
+valid-letter-sequence:
+	valid-letter-sequence? letter dash letter  
+	| valid-letter-sequence? letter  
+	| valid-letter-sequence dash letter ;
+
+whitespace-sequence:
+	whitespace-sequence? whitespace ;
+
+atomic-symbol:
+	backslash | colon | dash | double-quote | letter | optional | pipe |semi-colon | single-quote | whitespace ;
+
+char-litteral:
+	whitespace-sequence? single-quote atomic-symbol single-quote whitespace-sequence? ;
+
+backslash:
+	'\' ;
+
+colon:
+	':' ;
+
+dash:
+	'-' ;
+
+double-quote:
+	'"' ;
+
+letter:
+	'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'g' | 'h' | 'i' | 'j' | 'k' | 'l' | 'm' | 'n' | 'o' | 'p' | 'q' | 'r' | 's' | 't' | 'u' | 'v' | 'w' | 'x' | 'y' | 'z' ;
+
+optional:
+	'?' ;
+
+pipe:
+	'|' ;
+
+semi-colon:
+	';' ;
+
+single-quote:
+	''' ;
+	
+whitespace:
+	' ' | '\''r' | '\''n'| '\''t' ;
