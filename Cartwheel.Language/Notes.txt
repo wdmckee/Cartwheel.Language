@@ -2,3 +2,15 @@
 
 Not sure if I need a Syntax Result yet or not.
 Could return the data asociated with the IL or even cache
+
+
+
+----- Parser:
+
+Testing works like this...
+
+TestSuccess(expression, target function, return type)
+so for example
+TestSuccess("a-b", "Parse_Valid_Letter_Sequence_1", "Valid_Letter_Sequence");
+would test is the input expression "a-b" was a valid [Parse_Valid_Letter_Sequence_1].
+It would test that it returns a [Valid_Letter_Sequence] (or can be cast to it) though since we don't return sub-sequences.

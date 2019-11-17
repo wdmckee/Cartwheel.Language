@@ -23,7 +23,7 @@ namespace Cartwheel.Language
         private string _inputexpr;
         
 
-
+        // Note this allows us to not pass an AllowedCharList and it will assume everything is valid
         public ScanResult Scan(string InputExpr, char[] AllowedCharList= null)
         {
 

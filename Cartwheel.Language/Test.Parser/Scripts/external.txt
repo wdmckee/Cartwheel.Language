@@ -1,0 +1,13 @@
+﻿expr:
+	expr plus-p term 
+	| term ;
+
+term:
+	term times element
+	| element ;
+
+element:
+	expr ;
+
+plus-p:
+	'p';
