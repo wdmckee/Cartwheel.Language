@@ -109,16 +109,7 @@ namespace Cartwheel.Language
        
 
 
-        public string Emit()
-        {
-            List<string> return_items = new List<string>();
-
-            Action<Syntax> track_specific = delegate (Syntax node) { node.ObjectName = node.ObjectName.ToUpper(); var x = node.ObjectName + "(" + node.Id + ")" + "(" + node.OrderedId + ")" + "[" + node.Information + "]" + " " + node.ExpressionFragment; if (node.ObjectName == "PRODUCTION-RULE" || node.ObjectName == "PRODUCTION-NAME" || node.ObjectName == "RULE-NAME" || node.ObjectName == "PIPE" || node.ObjectName == "SEMI-COLON" || node.ObjectName == "OPTIONAL") { return_items.Add(x); } };
-            Visit(track_specific);
-
-            var result = String.Join(Environment.NewLine + ">>> ", return_items.ToArray());
-            return result;
-        }
+        
 
     }
 }
